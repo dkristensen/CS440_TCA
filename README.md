@@ -1,6 +1,4 @@
-# UPS Capstone Project
-### Traffic Control Agent throuh Deep Reinforcement Learning
----
+# UPS Capstone Project: Traffic Control Agent throuh Deep Reinforcement Learning
 ## Authors
  * [Drew Kristensen](https://github.com/dkristensen)
 ## Project Goal
