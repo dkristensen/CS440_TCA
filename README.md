@@ -1,6 +1,5 @@
 # UPS Capstone Project: Traffic Control Agent throuh Deep Reinforcement Learning
-## Authors
- * [Drew Kristensen](https://github.com/dkristensen)
+####Author : [Drew Kristensen](https://github.com/dkristensen)
 ## Project Goal
 The goal of this project is to create a policy learner to optimize the traffic flow in a non-virtual city environment. However, in order to accomplish this task, we will be using model based reinforcement learning approaches to tackle the end goal. By first training the architecture on an easily testable and repeatable enviornment, we can develop a model that will complete this task quicker and easier than one reliant on real world training data. One key feature in this project is keeping the inputs simple enough that they would be readily available in real life applications - that is to say the features used as inputs should be easy to observe. This project serves as the focus for the CS440 "Capstone in Computer Science" class at the University of Puget Sound.
 
