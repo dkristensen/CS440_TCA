@@ -12,4 +12,16 @@ This project will be completed using reinforcemenet learning techinques to devel
 Since this aproach has had success in other applications such as the board game GO with AlphaZero, teaching creatures mobility and actions (like in OpenAI's Transfer Learning or Deepmind's Locomotion experiments), or playing ATARI games (see OpenAI's DQN). The hope is that this project can be an example of yet another area that RL can be effective in, while creating a system that is both socially as well as environmentally beneficial. 
 
 ### Timeline
-A predicted timeline for the project can be found in the Capstone Proposal document found at [capstone_proposal.pdf](capstone_proposal.pdf) and a week-by-week list of things to get done that week can be found [here](https://docs.google.com/spreadsheets/d/1TBElkfrl9OKlTEco1s_gyn_HsFMO4bS6SzA8f0dDY2Q/edit#gid=0)
+A predicted timeline for the project can be found in the Capstone Proposal document found at [capstone_proposal.pdf](capstone_proposal.pdf).
+
+
+### Progress
+
+##### Week 1
+- [x] Get a working installation of the SUMO program, complete with full functioning SUMOPy tools.
+- [ ] Put together a DDQN network to solve the Cartpole enviroment from the OpenAI gym.
+- [x] Decide and write out the [state space and action space](state_action_spaces.pdf).
+##### Week 2
+- [ ] Put together a DDQN network to solve the Cartpole enviroment from the OpenAI gym
+- [ ] Develop a program which changes the light signal at a single four way intersection that lets the directions with the most cars at the light through
+- [ ] Brainstorm and write down the reward function
