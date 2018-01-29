@@ -8,20 +8,19 @@ The goal of this project is to create a policy learner to optimize the traffic f
  * [SUMO](http://sumo.dlr.de/wiki/Simulation_of_Urban_MObility_-_Wiki)
 
 ## Process
-This project will be completed using reinforcemenet learning techinques to develop an efficient policy to minimze time spent waiting at lights for cars in a city environment.  
+This project will be completed using reinforcemenet learning techinques to develop an efficient policy to minimze time spent waiting at lights for cars in a city environment.
 Since this aproach has had success in other applications such as the board game GO with AlphaZero, teaching creatures mobility and actions (like in OpenAI's Transfer Learning or Deepmind's Locomotion experiments), or playing ATARI games (see OpenAI's DQN). The hope is that this project can be an example of yet another area that RL can be effective in, while creating a system that is both socially as well as environmentally beneficial. 
 
-### Timeline
-A predicted timeline for the project can be found in the Capstone Proposal document found at [capstone_proposal.pdf](capstone_proposal.pdf).
+A predicted timeline for the project can be found in the Capstone Proposal document found [here](capstone_proposal.pdf).
 
 
 ### Progress
 
 ##### Week 1
 - [x] Get a working installation of the SUMO program, complete with full functioning SUMOPy tools.
-- [ ] Put together a DDQN network to solve the Cartpole enviroment from the OpenAI gym.
+- [ ] Put together a DDQN network to solve the [Cartpole enviroment from the OpenAI gym](https://gym.openai.com/envs/CartPole-v0/).
 - [x] Decide and write out the [state space and action space](state_action_spaces.pdf).
 ##### Week 2
-- [ ] Put together a DDQN network to solve the Cartpole enviroment from the OpenAI gym
-- [ ] Develop a program which changes the light signal at a single four way intersection that lets the directions with the most cars at the light through
-- [ ] Brainstorm and write down the reward function
+- [ ] Put together a DDQN network to solve the [Cartpole enviroment from the OpenAI gym](https://gym.openai.com/envs/CartPole-v0/).
+- [ ] Develop a program which changes the light signal at a single four way intersection that lets the directions with the most cars at the light through.
+- [ ] Brainstorm and write down the reward function.
