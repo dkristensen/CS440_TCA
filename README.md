@@ -3,6 +3,8 @@
 ## Project Goal
 The goal of this project is to create a policy learner to optimize the traffic flow in a non-virtual city environment. However, in order to accomplish this task, we will be using model based reinforcement learning approaches to tackle the end goal. By first training the architecture on an easily testable and repeatable enviornment, we can develop a model that will complete this task quicker and easier than one reliant on real world training data. One key feature in this project is keeping the inputs simple enough that they would be readily available in real life applications - that is to say the features used as inputs should be easy to observe. This project serves as the focus for the [CS440 "Capstone in Computer Science"](https://www.pugetsound.edu/academics/departments-and-programs/undergraduate/math-and-computer-science/course-descriptions-cs/) class at the University of Puget Sound.
 
+One of the end goals for this project is for any city to be able to download their infrastructure (since SUMO and Open Street Maps work nicely together) and be able to learn the best agent for their city's traffic lights.
+
 ## Packages Used
  * [TensorFlow](https://www.tensorflow.org/)
  * [SUMO](http://sumo.dlr.de/wiki/Simulation_of_Urban_MObility_-_Wiki)
@@ -22,5 +24,5 @@ A predicted timeline for the project can be found in the Capstone Proposal docum
 - [x] Decide and write out the [state space and action space](state_action_spaces.pdf).
 ##### Week 2
 - [ ] Put together a DDQN network to solve the [Cartpole enviroment from the OpenAI gym](https://gym.openai.com/envs/CartPole-v0/).
-- [ ] Develop a program which changes the light signal at a single four way intersection that lets the directions with the most cars at the light through.
-- [ ] Brainstorm and write down the reward function.
+- [x] Develop a program which changes the light signal at a single four way intersection that lets the directions with the most cars at the light through.
+- [x] Brainstorm and write down the [reward function](reward.pdf).

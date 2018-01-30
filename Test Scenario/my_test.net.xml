@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Mon Jan 29 16:26:23 2018 by Netedit Version 0.30.0
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="/Users/dkristensen/Downloads/sumo-0.32.0/my_test.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/Users/dkristensen/Downloads/sumo-0.32.0/my_test.net.xml"/>
+    </output>
+
+    <processing>
+        <no-turnarounds value="true"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+        <junctions.corner-detail value="0"/>
+        <rectangular-lane-cut value="false"/>
+    </processing>
+
+</configuration>
+-->
+
+<net version="0.27" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="-100.00,-100.00,100.00,100.00" origBoundary="-10000000000.00,-10000000000.00,10000000000.00,10000000000.00" projParameter="!"/>
+
+    <edge id=":Origin_0" function="internal">
+        <lane id=":Origin_0_0" index="0" speed="25.00" length="5.00" shape="-4.95,8.05 -5.14,6.69 -5.72,5.72 -6.69,5.14 -8.05,4.95"/>
+    </edge>
+    <edge id=":Origin_1" function="internal">
+        <lane id=":Origin_1_0" index="0" speed="25.00" length="16.10" shape="-4.95,8.05 -4.95,-8.05"/>
+        <lane id=":Origin_1_1" index="1" speed="25.00" length="16.10" shape="-1.65,8.05 -1.65,-8.05"/>
+    </edge>
+    <edge id=":Origin_3" function="internal">
+        <lane id=":Origin_3_0" index="0" speed="25.00" length="6.41" shape="-1.65,8.05 -1.04,3.81 0.05,1.98"/>
+    </edge>
+    <edge id=":Origin_16" function="internal">
+        <lane id=":Origin_16_0" index="0" speed="25.00" length="9.23" shape="0.05,1.98 0.77,0.77 3.81,-1.04 8.05,-1.65"/>
+    </edge>
+    <edge id=":Origin_4" function="internal">
+        <lane id=":Origin_4_0" index="0" speed="27.50" length="5.00" shape="8.05,4.95 6.69,5.14 5.72,5.72 5.14,6.69 4.95,8.05"/>
+    </edge>
+    <edge id=":Origin_5" function="internal">
+        <lane id=":Origin_5_0" index="0" speed="25.00" length="16.10" shape="8.05,4.95 -8.05,4.95"/>
+        <lane id=":Origin_5_1" index="1" speed="25.00" length="16.10" shape="8.05,1.65 -8.05,1.65"/>
+    </edge>
+    <edge id=":Origin_7" function="internal">
+        <lane id=":Origin_7_0" index="0" speed="25.00" length="6.41" shape="8.05,1.65 3.81,1.04 1.98,-0.05"/>
+    </edge>
+    <edge id=":Origin_17" function="internal">
+        <lane id=":Origin_17_0" index="0" speed="25.00" length="9.23" shape="1.98,-0.05 0.78,-0.78 -1.04,-3.81 -1.65,-8.05"/>
+    </edge>
+    <edge id=":Origin_8" function="internal">
+        <lane id=":Origin_8_0" index="0" speed="25.00" length="5.00" shape="4.95,-8.05 5.14,-6.69 5.72,-5.73 6.69,-5.14 8.05,-4.95"/>
+    </edge>
+    <edge id=":Origin_9" function="internal">
+        <lane id=":Origin_9_0" index="0" speed="27.50" length="16.10" shape="4.95,-8.05 4.95,8.05"/>
+        <lane id=":Origin_9_1" index="1" speed="27.50" length="16.10" shape="1.65,-8.05 1.65,8.05"/>
+    </edge>
+    <edge id=":Origin_11" function="internal">
+        <lane id=":Origin_11_0" index="0" speed="25.00" length="6.41" shape="1.65,-8.05 1.04,-3.81 -0.05,-1.99"/>
+    </edge>
+    <edge id=":Origin_18" function="internal">
+        <lane id=":Origin_18_0" index="0" speed="25.00" length="9.23" shape="-0.05,-1.99 -0.77,-0.78 -3.81,1.04 -8.05,1.65"/>
+    </edge>
+    <edge id=":Origin_12" function="internal">
+        <lane id=":Origin_12_0" index="0" speed="25.00" length="5.00" shape="-8.05,-4.95 -6.69,-5.14 -5.72,-5.73 -5.14,-6.69 -4.95,-8.05"/>
+    </edge>
+    <edge id=":Origin_13" function="internal">
+        <lane id=":Origin_13_0" index="0" speed="25.00" length="16.10" shape="-8.05,-4.95 8.05,-4.95"/>
+        <lane id=":Origin_13_1" index="1" speed="25.00" length="16.10" shape="-8.05,-1.65 8.05,-1.65"/>
+    </edge>
+    <edge id=":Origin_15" function="internal">
+        <lane id=":Origin_15_0" index="0" speed="27.50" length="6.41" shape="-8.05,-1.65 -3.81,-1.04 -1.98,0.05"/>
+    </edge>
+    <edge id=":Origin_19" function="internal">
+        <lane id=":Origin_19_0" index="0" speed="27.50" length="9.23" shape="-1.98,0.05 -0.77,0.77 1.04,3.81 1.65,8.05"/>
+    </edge>
+
+    <edge id="Ei" from="JE" to="Origin" priority="1">
+        <lane id="Ei_0" index="0" speed="25.00" length="91.95" shape="100.00,4.95 8.05,4.95"/>
+        <lane id="Ei_1" index="1" speed="25.00" length="91.95" shape="100.00,1.65 8.05,1.65"/>
+    </edge>
+    <edge id="Eo" from="Origin" to="JE" priority="1">
+        <lane id="Eo_0" index="0" speed="25.00" length="91.95" shape="8.05,-4.95 100.00,-4.95"/>
+        <lane id="Eo_1" index="1" speed="25.00" length="91.95" shape="8.05,-1.65 100.00,-1.65"/>
+    </edge>
+    <edge id="Ni" from="JN" to="Origin" priority="1">
+        <lane id="Ni_0" index="0" speed="25.00" length="91.95" shape="-4.95,100.00 -4.95,8.05"/>
+        <lane id="Ni_1" index="1" speed="25.00" length="91.95" shape="-1.65,100.00 -1.65,8.05"/>
+    </edge>
+    <edge id="No" from="Origin" to="JN" priority="1">
+        <lane id="No_0" index="0" speed="30.00" length="91.95" shape="4.95,8.05 4.95,100.00"/>
+        <lane id="No_1" index="1" speed="30.00" length="91.95" shape="1.65,8.05 1.65,100.00"/>
+    </edge>
+    <edge id="Si" from="JS" to="Origin" priority="1">
+        <lane id="Si_0" index="0" speed="25.00" length="91.95" shape="4.95,-100.00 4.95,-8.05"/>
+        <lane id="Si_1" index="1" speed="25.00" length="91.95" shape="1.65,-100.00 1.65,-8.05"/>
+    </edge>
+    <edge id="So" from="Origin" to="JS" priority="1" spreadType="center" shape="-3.30,0.11 -3.30,-100.00">
+        <lane id="So_0" index="0" speed="25.00" length="91.95" shape="-4.95,-8.05 -4.95,-100.00"/>
+        <lane id="So_1" index="1" speed="25.00" length="91.95" shape="-1.65,-8.05 -1.65,-100.00"/>
+    </edge>
+    <edge id="Wo" from="Origin" to="JW" priority="1">
+        <lane id="Wo_0" index="0" speed="25.00" length="91.95" shape="-8.05,4.95 -100.00,4.95"/>
+        <lane id="Wo_1" index="1" speed="25.00" length="91.95" shape="-8.05,1.65 -100.00,1.65"/>
+    </edge>
+    <edge id="Wi" from="JW" to="Origin" priority="1">
+        <lane id="Wi_0" index="0" speed="25.00" length="91.95" shape="-100.00,-4.95 -8.05,-4.95"/>
+        <lane id="Wi_1" index="1" speed="25.00" length="91.95" shape="-100.00,-1.65 -8.05,-1.65"/>
+    </edge>
+
+    <tlLogic id="Origin" type="static" programID="0" offset="0">
+        <phase duration="23" state="GGGgsrrrGGGgsrrr"/>
+        <phase duration="8" state="gggGsrrrgggGsrrr"/>
+        <phase duration="6" state="srrGsrrrsrrGsrrr"/>
+        <phase duration="8" state="srrysrrrsrrysrrr"/>
+        <phase duration="23" state="srrrGGGgsrrrGGGg"/>
+        <phase duration="8" state="srrryyygsrrryyyg"/>
+        <phase duration="6" state="srrrsrrGsrrrsrrG"/>
+        <phase duration="8" state="srrrsrrysrrrsrry"/>
+    </tlLogic>
+
+    <junction id="JE" type="dead_end" x="100.00" y="0.00" incLanes="Eo_0 Eo_1" intLanes="" shape="100.00,0.05 100.00,-6.55 100.00,-0.05"/>
+    <junction id="JN" type="dead_end" x="0.00" y="100.00" incLanes="No_0 No_1" intLanes="" shape="-0.05,100.00 6.55,100.00 0.05,100.00"/>
+    <junction id="JS" type="dead_end" x="0.00" y="-100.00" incLanes="So_0 So_1" intLanes="" shape="0.05,-100.00 -6.55,-100.00 -0.05,-100.00"/>
+    <junction id="JW" type="dead_end" x="-100.00" y="0.00" incLanes="Wo_0 Wo_1" intLanes="" shape="-100.00,-0.05 -100.00,6.55 -100.00,0.05"/>
+    <junction id="Origin" type="traffic_light_right_on_red" x="0.00" y="0.00" incLanes="Ni_0 Ni_1 Ei_0 Ei_1 Si_0 Si_1 Wi_0 Wi_1" intLanes=":Origin_0_0 :Origin_1_0 :Origin_1_1 :Origin_16_0 :Origin_4_0 :Origin_5_0 :Origin_5_1 :Origin_17_0 :Origin_8_0 :Origin_9_0 :Origin_9_1 :Origin_18_0 :Origin_12_0 :Origin_13_0 :Origin_13_1 :Origin_19_0" shape="-6.55,8.05 6.55,8.05 8.05,6.55 8.05,-6.55 6.55,-8.05 -6.55,-8.05 -8.05,-6.55 -8.05,6.55">
+        <request index="0" response="0000100001100000" foes="0000100001100000" cont="0"/>
+        <request index="1" response="0000000000000000" foes="1111100011100000" cont="0"/>
+        <request index="2" response="0000000000000000" foes="1111100011100000" cont="0"/>
+        <request index="3" response="0000011100000000" foes="1110011111100000" cont="1"/>
+        <request index="4" response="1000011000000000" foes="1000011000000000" cont="0"/>
+        <request index="5" response="0000111000001111" foes="1000111000001111" cont="0"/>
+        <request index="6" response="0000111000001111" foes="1000111000001111" cont="0"/>
+        <request index="7" response="0111111000001110" foes="0111111000001110" cont="1"/>
+        <request index="8" response="0110000000001000" foes="0110000000001000" cont="0"/>
+        <request index="9" response="0000000000000000" foes="1110000011111000" cont="0"/>
+        <request index="10" response="0000000000000000" foes="1110000011111000" cont="0"/>
+        <request index="11" response="0000000000000111" foes="1110000011100111" cont="1"/>
+        <request index="12" response="0000000010000110" foes="0000000010000110" cont="0"/>
+        <request index="13" response="0000111100001110" foes="0000111110001110" cont="0"/>
+        <request index="14" response="0000111100001110" foes="0000111110001110" cont="0"/>
+        <request index="15" response="0000111001111110" foes="0000111001111110" cont="1"/>
+    </junction>
+
+    <junction id=":Origin_16_0" type="internal" x="0.05" y="1.98" incLanes=":Origin_3_0 Si_0 Si_1" intLanes=":Origin_5_0 :Origin_5_1 :Origin_7_0 :Origin_8_0 :Origin_9_0 :Origin_9_1 :Origin_13_0 :Origin_13_1 :Origin_15_0"/>
+    <junction id=":Origin_17_0" type="internal" x="1.98" y="-0.05" incLanes=":Origin_7_0 Wi_0 Wi_1" intLanes=":Origin_1_0 :Origin_1_1 :Origin_3_0 :Origin_9_0 :Origin_9_1 :Origin_11_0 :Origin_12_0 :Origin_13_0 :Origin_13_1"/>
+    <junction id=":Origin_18_0" type="internal" x="-0.05" y="-1.99" incLanes=":Origin_11_0 Ni_0 Ni_1" intLanes=":Origin_0_0 :Origin_1_0 :Origin_1_1 :Origin_5_0 :Origin_5_1 :Origin_7_0 :Origin_13_0 :Origin_13_1 :Origin_15_0"/>
+    <junction id=":Origin_19_0" type="internal" x="-1.98" y="0.05" incLanes=":Origin_15_0 Ei_0 Ei_1" intLanes=":Origin_1_0 :Origin_1_1 :Origin_3_0 :Origin_4_0 :Origin_5_0 :Origin_5_1 :Origin_9_0 :Origin_9_1 :Origin_11_0"/>
+
+    <connection from="Ei" to="No" fromLane="0" toLane="0" via=":Origin_4_0" tl="Origin" linkIndex="4" dir="r" state="o"/>
+    <connection from="Ei" to="Wo" fromLane="0" toLane="0" via=":Origin_5_0" tl="Origin" linkIndex="5" dir="s" state="o"/>
+    <connection from="Ei" to="Wo" fromLane="1" toLane="1" via=":Origin_5_1" tl="Origin" linkIndex="6" dir="s" state="o"/>
+    <connection from="Ei" to="So" fromLane="1" toLane="1" via=":Origin_7_0" tl="Origin" linkIndex="7" dir="l" state="o"/>
+    <connection from="Ni" to="Wo" fromLane="0" toLane="0" via=":Origin_0_0" tl="Origin" linkIndex="0" dir="r" state="o"/>
+    <connection from="Ni" to="So" fromLane="0" toLane="0" via=":Origin_1_0" tl="Origin" linkIndex="1" dir="s" state="o"/>
+    <connection from="Ni" to="So" fromLane="1" toLane="1" via=":Origin_1_1" tl="Origin" linkIndex="2" dir="s" state="o"/>
+    <connection from="Ni" to="Eo" fromLane="1" toLane="1" via=":Origin_3_0" tl="Origin" linkIndex="3" dir="l" state="o"/>
+    <connection from="Si" to="Eo" fromLane="0" toLane="0" via=":Origin_8_0" tl="Origin" linkIndex="8" dir="r" state="o"/>
+    <connection from="Si" to="No" fromLane="0" toLane="0" via=":Origin_9_0" tl="Origin" linkIndex="9" dir="s" state="o"/>
+    <connection from="Si" to="No" fromLane="1" toLane="1" via=":Origin_9_1" tl="Origin" linkIndex="10" dir="s" state="o"/>
+    <connection from="Si" to="Wo" fromLane="1" toLane="1" via=":Origin_11_0" tl="Origin" linkIndex="11" dir="l" state="o"/>
+    <connection from="Wi" to="So" fromLane="0" toLane="0" via=":Origin_12_0" tl="Origin" linkIndex="12" dir="r" state="o"/>
+    <connection from="Wi" to="Eo" fromLane="0" toLane="0" via=":Origin_13_0" tl="Origin" linkIndex="13" dir="s" state="o"/>
+    <connection from="Wi" to="Eo" fromLane="1" toLane="1" via=":Origin_13_1" tl="Origin" linkIndex="14" dir="s" state="o"/>
+    <connection from="Wi" to="No" fromLane="1" toLane="1" via=":Origin_15_0" tl="Origin" linkIndex="15" dir="l" state="o"/>
+
+    <connection from=":Origin_0" to="Wo" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Origin_1" to="So" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Origin_1" to="So" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Origin_3" to="Eo" fromLane="0" toLane="1" via=":Origin_16_0" dir="s" state="m"/>
+    <connection from=":Origin_16" to="Eo" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":Origin_4" to="No" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Origin_5" to="Wo" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Origin_5" to="Wo" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Origin_7" to="So" fromLane="0" toLane="1" via=":Origin_17_0" dir="s" state="m"/>
+    <connection from=":Origin_17" to="So" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":Origin_8" to="Eo" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Origin_9" to="No" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Origin_9" to="No" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Origin_11" to="Wo" fromLane="0" toLane="1" via=":Origin_18_0" dir="s" state="m"/>
+    <connection from=":Origin_18" to="Wo" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":Origin_12" to="So" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Origin_13" to="Eo" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Origin_13" to="Eo" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":Origin_15" to="No" fromLane="0" toLane="1" via=":Origin_19_0" dir="s" state="m"/>
+    <connection from=":Origin_19" to="No" fromLane="0" toLane="1" dir="s" state="M"/>
+
+</net>
