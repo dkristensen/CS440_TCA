@@ -23,6 +23,10 @@ A predicted timeline for the project can be found in the Capstone Proposal docum
 - [ ] Put together a DDQN network to solve the [Cartpole enviroment from the OpenAI gym](https://gym.openai.com/envs/CartPole-v0/).
 - [x] Decide and write out the [state space and action space](state_action_spaces.pdf).
 ##### Week 2
-- [ ] Put together a DDQN network to solve the [Cartpole enviroment from the OpenAI gym](https://gym.openai.com/envs/CartPole-v0/).
+- [x] Put together a DDQN network to solve the [Cartpole enviroment from the OpenAI gym](https://gym.openai.com/envs/CartPole-v0/).
 - [x] Develop a program which changes the light signal at a single four way intersection that lets the directions with the most cars at the light through.
 - [x] Brainstorm and write down the [reward function](reward.pdf).
+##### Week 3
+- [ ] Debug the implemented DDQN for the [cartpole problem](https://gym.openai.com/envs/CartPole-v0/).
+- [x] Write a [program](Test_Scenario/state_getter.py) that collects the waiting time for all the cars in the system and returns the squared sum of waiting time for all vehicles in each lane.
+- [ ] Create a python script to generate and populate with routes, a SUMO network in a rectangle with arbitrary number of intersections, arbitrary side lengths, and arbitrary lane numbers.

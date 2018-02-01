@@ -6,15 +6,14 @@ import sys
 import optparse
 import subprocess
 import random
+import state_getter as sg
 
 # we need to import python modules from the $SUMO_HOME/tools directory
 try:
     sys.path.append(os.path.join(os.path.dirname(
         __file__),"tools"))  # tutorial in tests
-    print(os.path.join(os.environ.get("SUMO_HOME", os.path.join(
-        os.path.dirname(__file__))), "tools"))
     sys.path.append(os.path.join(os.environ.get("SUMO_HOME", os.path.join(
-        os.path.dirname(__file__))), "tools"))  # tutorial in docs
+        os.path.dirname(__file__), "..", "..", "..")), "tools"))  # tutorial in docs
     from sumolib import checkBinary  # noqa
 except ImportError:
     sys.exit(
@@ -22,7 +21,7 @@ except ImportError:
 
 import traci
 
-time_step = 0.5
+time_step = 1
 time_modifier = 1/time_step
 
 def gen_routes_file():
@@ -31,7 +30,7 @@ def gen_routes_file():
     # demand per second from different directions
     pW = 1. / 10 * time_modifier
     pE = 1. / 15 * time_modifier
-    pN = 1. / 20 * time_modifier
+    pN = 1. / 10 * time_modifier
     pS = 1. / 14 * time_modifier
 
     vehicle_possibilities = ["CarA", "CarB", "CarC", "CarD"]
@@ -100,39 +99,35 @@ def run():
     duration = 0
     # we start with phase 0 where NS has left green
     traci.trafficlight.setPhase("Origin", 0)
+    controlled_lanes = traci.trafficlight.getControlledLanes("Origin")
+    # print(sg.get_wait_time_for_light("Origin"))
     while traci.simulation.getMinExpectedNumber() > 0:
         traci.simulationStep()
-        controlled_lanes = traci.trafficlight.getControlledLanes("Origin")
-        NS=0
-        EW=0
-        for lane in controlled_lanes:
-            if(("N" in lane) or ("S" in lane)):
-                NS+=traci.lane.getLastStepVehicleNumber(lane)
-            else: 
-                EW+=traci.lane.getLastStepVehicleNumber(lane)
-        if(EW>(10+NS)):
+        wait_times = sg.get_network_waiting_time(summed=True)[0]
+        NS = wait_times[0]+wait_times[2]
+        EW = wait_times[1]+wait_times[3]
+        if(EW>(20+NS)):
             if(traci.trafficlight.getPhase("Origin") < 2):
                 traci.trafficlight.setPhase("Origin", 2)
                 start_change = step
                 duration=0
             else:
-                if(step-start_change>14):
-                    if(duration<14):
+                if(step-start_change>6):
+                    if(duration<8):
                         #Left turns for EW
                         traci.trafficlight.setPhase("Origin", 3)
                         duration+=1
                     else:
                         #Straight for EW
                         traci.trafficlight.setPhase("Origin", 4)
-        elif(NS>(10+EW)):
-            print(traci.trafficlight.getPhase("Origin"))
+        elif(NS>(20+EW)):
             if(traci.trafficlight.getPhase("Origin") == 3 or traci.trafficlight.getPhase("Origin") == 4):
                 traci.trafficlight.setPhase("Origin", 5)
                 start_change = step
                 duration=0
             else:
-                if(step-start_change>14):
-                    if(duration<14):
+                if(step-start_change>6):
+                    if(duration<8):
                         #Left turns for EW
                         traci.trafficlight.setPhase("Origin", 0)
                         duration+=1
@@ -171,5 +166,5 @@ if __name__ == "__main__":
     # subprocess and then the python script connects and runs
     traci.start([sumoBinary, "-c", "my_test.sumocfg",
                              "--tripinfo-output", "tripinfo.xml",
-                             "--step-length", "0.5"])
+                             "--step-length", str(time_step)])
     run()
