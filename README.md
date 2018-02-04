@@ -29,4 +29,7 @@ A predicted timeline for the project can be found in the Capstone Proposal docum
 ##### Week 3
 - [ ] Debug the implemented DDQN for the [cartpole problem](https://gym.openai.com/envs/CartPole-v0/).
 - [x] Write a [program](Test_Scenario/state_getter.py) that collects the waiting time for all the cars in the system and returns the squared sum of waiting time for all vehicles in each lane.
-- [ ] Create a python script to generate and populate with routes, a SUMO network in a rectangle with arbitrary number of intersections, arbitrary side lengths, and arbitrary lane numbers.
+- [x] Create a [python script](network_maker.py) to generate and populate with routes, a SUMO network in a rectangle with arbitrary number of intersections, arbitrary side lengths, and arbitrary lane numbers.
+##### Week 4
+- [ ] Set up the framework to create a DQN for a ***l*** way, ***n*** street intersection.
+- [ ] Modify the above framework to use Double Q-learning
