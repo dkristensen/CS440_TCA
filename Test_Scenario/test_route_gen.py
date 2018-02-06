@@ -6,7 +6,7 @@ import sys
 import optparse
 import subprocess
 import random
-import state_getter as sg
+import reward_getter as rg
 
 # we need to import python modules from the $SUMO_HOME/tools directory
 try:
@@ -100,10 +100,10 @@ def run():
     # we start with phase 0 where NS has left green
     traci.trafficlight.setPhase("Origin", 0)
     controlled_lanes = traci.trafficlight.getControlledLanes("Origin")
-    # print(sg.get_wait_time_for_light("Origin"))
+    # print(rg.get_wait_time_for_light("Origin"))
     while traci.simulation.getMinExpectedNumber() > 0:
         traci.simulationStep()
-        wait_times = sg.get_network_waiting_time(summed=True)[0]
+        wait_times = rg.get_network_waiting_time(summed=True)[0]
         NS = wait_times[0]+wait_times[2]
         EW = wait_times[1]+wait_times[3]
         if(EW>(20+NS)):

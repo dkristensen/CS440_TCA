@@ -27,9 +27,10 @@ A predicted timeline for the project can be found in the Capstone Proposal docum
 - [x] Develop a program which changes the light signal at a single four way intersection that lets the directions with the most cars at the light through.
 - [x] Brainstorm and write down the [reward function](reward.pdf).
 ##### Week 3
-- [ ] Debug the implemented DDQN for the [cartpole problem](https://gym.openai.com/envs/CartPole-v0/).
-- [x] Write a [program](Test_Scenario/state_getter.py) that collects the waiting time for all the cars in the system and returns the squared sum of waiting time for all vehicles in each lane.
+- [x] Debug the [implemented DDQN](Cartpole%20DDQN/my_ddqn.py) for the [cartpole problem](https://gym.openai.com/envs/CartPole-v0/). The problem is solved when the average score of the last 100 iterations is over 195, which we have at [episode 294](Cartpole%20DDQN/results.csv).
+- [x] Write a [program](Test_Scenario/reward_getter.py) that collects the waiting time for all the cars in the system and returns the squared sum of waiting time for all vehicles in each lane.
 - [x] Create a [python script](network_maker.py) to generate and populate with routes, a SUMO network in a rectangle with arbitrary number of intersections, arbitrary side lengths, and arbitrary lane numbers.
 ##### Week 4
+- [x] Create a [python script](state_getter.py) that gets all components of the [state space](state_action_spaces.pdf).
 - [ ] Set up the framework to create a DQN for a ***l*** way, ***n*** street intersection.
 - [ ] Modify the above framework to use Double Q-learning
